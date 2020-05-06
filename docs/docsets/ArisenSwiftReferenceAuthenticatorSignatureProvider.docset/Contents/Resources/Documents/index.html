@@ -111,7 +111,7 @@
             <p><img src="https://github.com/ARISENIO/arisen-swift-reference-ios-authenticator-signature-provider/raw/master/img/swift-logo.png" alt="Swift Logo"></p>
 <h1 id='arisen-sdk-for-swift-reference-ios-authenticator-signature-provider-img-src-https-img-shields-io-badge-arisen-labs-5cb3ff-svg-alt-arisen-labs' class='heading'>Arisen SDK for Swift: Reference iOS Authenticator Signature Provider <img src="https://img.shields.io/badge/Arisen-Labs-5cb3ff.svg" alt="Arisen Labs"></h1>
 
-<p><a href="https://github.com/Arisen/Arisen-swift-reference-ios-authenticator-signature-provider/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="Software License"></a>
+<p><a href="https://github.com/ARISENIO/arisen-swift-reference-ios-authenticator-signature-provider/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="Software License"></a>
 <a href="https://swift.org"><img src="https://img.shields.io/badge/Language-Swift_4.2-orange.svg" alt="Swift 4.2"></a>
 <img src="https://img.shields.io/badge/Deployment%20Target-iOS%2011-blue.svg" alt=""></p>
 
@@ -199,10 +199,10 @@
     <span class="n">arisenAppSignatureProvider</span><span class="o">.</span><span class="n">securityExclusions</span> <span class="o">=</span> <span class="n">theSecurityExclusions</span>
 <span class="p">}</span>
 
-<span class="n">transaction</span><span class="o">.</span><span class="n">signatureProvider</span> <span class="o">=</span> <span class="n">ArisenAppSignatureProvider</span>
+<span class="n">transaction</span><span class="o">.</span><span class="n">signatureProvider</span> <span class="o">=</span> <span class="n">arisenAppSignatureProvider</span>
 
 <span class="k">let</span> <span class="nv">action</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">ArisenTransaction</span><span class="o">.</span><span class="kt">Action</span><span class="p">(</span>
-    <span class="nv">account</span><span class="p">:</span> <span class="kt">ArisenName</span><span class="p">(</span><span class="s">"Arisen.token"</span><span class="p">),</span>
+    <span class="nv">account</span><span class="p">:</span> <span class="kt">ArisenName</span><span class="p">(</span><span class="s">"arisen.token"</span><span class="p">),</span>
     <span class="nv">name</span><span class="p">:</span> <span class="kt">ArisenName</span><span class="p">(</span><span class="s">"transfer"</span><span class="p">),</span>
         <span class="nv">authorization</span><span class="p">:</span> <span class="p">[</span><span class="kt">ArisenTransaction</span><span class="o">.</span><span class="kt">Action</span><span class="o">.</span><span class="kt">Authorization</span><span class="p">(</span>
         <span class="nv">actor</span><span class="p">:</span> <span class="kt">ArisenName</span><span class="p">(</span><span class="n">from</span><span class="p">),</span>
@@ -269,7 +269,7 @@
 <span class="n">signRequest</span><span class="o">.</span><span class="n">publicKeys</span> <span class="o">=</span> <span class="n">publicKeys</span>
 <span class="n">signRequest</span><span class="o">.</span><span class="n">chainId</span> <span class="o">=</span> <span class="n">chainId</span>
 
-<span class="n">ArisenAppSignatureProvider</span><span class="o">.</span><span class="nf">signTransaction</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="n">signRequest</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="k">in</span>
+<span class="n">arisenAppSignatureProvider</span><span class="o">.</span><span class="nf">signTransaction</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="n">signRequest</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="k">in</span>
     <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
@@ -279,7 +279,7 @@
 
 <p>Arisen Reference iOS Authenticator App sends responses to the requesting app via the <code><a href="Classes/ArisenReferenceAuthenticatorSignatureProvider.html#/s:49ArisenSwiftReferenceAuthenticatorSignatureProvider0acdeF0C9returnUrlSSvp">ArisenReferenceAuthenticatorSignatureProvider.returnUrl</a></code>. Responses take the form of an <code>ArisenAvailableKeysResponse</code> or an <code>ArisenTransactionSignatureResponse</code>.</p>
 
-<p>All of this is facilitated by the <a href="https://github.com/Arisen/Arisen-authentication-transport-protocol-spec">Arisen Authentication Transport Protocol Specification</a>.</p>
+<p>All of this is facilitated by the <a href="https://github.com/ARISENIO/arisen-authentication-transport-protocol-spec">Arisen Authentication Transport Protocol Specification</a>.</p>
 
 <p><img src="https://github.com/ARISENIO/arisen-swift-reference-ios-authenticator-signature-provider/raw/master/img/diagram.png" alt="Diagram"></p>
 
@@ -291,22 +291,22 @@
 </code></pre>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
-<p>Please refer to the generated code documentation at <a href="https://arisen.github.io/arisen-swift-reference-ios-authenticator-signature-provider">https://Arisen.github.io/Arisen-swift-reference-ios-authenticator-signature-provider</a> or by cloning this repo and opening the <code>docs/index.html</code> file in your browser.</p>
+<p>Please refer to the generated code documentation at <a href="https://arisen.github.io/arisen-swift-reference-ios-authenticator-signature-provider">https://arisen.github.io/arisen-swift-reference-ios-authenticator-signature-provider</a> or by cloning this repo and opening the <code>docs/index.html</code> file in your browser.</p>
 <h2 id='library-methods-and-options' class='heading'>Library Methods and Options</h2>
 
 <p>This library is an implementation of <a href="https://github.com/ARISENIO/arisen-swift/blob/master/ArisenSwift/ArisenSignatureProviderProtocol/ArisenSignatureProviderProtocol.swift"><code>ArisenSignatureProviderProtocol</code></a>. It implements the following protocol methods:</p>
 
 <ul>
-<li><code>ArisenSwiftReferenceAuthenticatorSignatureProvider.signTransaction(request:completion:)</code> signs an <a href="https://github.com/Arisen/Arisen-swift/blob/master/ArisenSwift/ArisenTransaction/ArisenTransaction.swift"><code>ArisenTransaction</code></a>.</li>
+<li><code>ArisenSwiftReferenceAuthenticatorSignatureProvider.signTransaction(request:completion:)</code> signs an <a href="https://github.com/ARISENIO/arisen-swift/blob/master/ArisenSwift/ArisenTransaction/ArisenTransaction.swift"><code>ArisenTransaction</code></a>.</li>
 <li><code>ArisenSwiftReferenceAuthenticatorSignatureProvider.getAvailableKeys(completion:)</code> returns a response containing the public keys associated with the private keys that the object is initialized with.</li>
 </ul>
 
 <p><code>ArisenSwiftReferenceAuthenticatorSignatureProvider</code> is implemented as a singleton. To access it simply call:</p>
 
 <ul>
-<li><code>let ArisenAppSignatureProvider = ArisenSwiftReferenceAuthenticatorSignatureProvider.shared</code> which will return the current instance, initializing it if necessary.</li>
-<li>Set the return URL, if you have not already done so. <code>ArisenAppSignatureProvider.returnUrl = &quot;myappurl://&quot;</code></li>
-<li>Set the declared domain for matching, if you have not already done so. <code>ArisenAppSignatureProvider.declaredDomain = &quot;myapp.domain.com&quot;</code></li>
+<li><code>let arisenAppSignatureProvider = ArisenSwiftReferenceAuthenticatorSignatureProvider.shared</code> which will return the current instance, initializing it if necessary.</li>
+<li>Set the return URL, if you have not already done so. <code>arisenAppSignatureProvider.returnUrl = &quot;myappurl://&quot;</code></li>
+<li>Set the declared domain for matching, if you have not already done so. <code>arisenAppSignatureProvider.declaredDomain = &quot;myapp.domain.com&quot;</code></li>
 <li>Optionally, pass any <code><a href="Structs/SecurityExclusions.html">SecurityExclusions</a></code> you wish to set if you are doing development and testing. <code>ArisenAppSignatureProvider.securityExclusions = mySecurityExclusions</code>. More information about security exclusions can be found <a href="https://github.com/Arisen/Arisen-authentication-transport-protocol-spec#securityexclusions-optional">here</a>.</li>
 </ul>
 

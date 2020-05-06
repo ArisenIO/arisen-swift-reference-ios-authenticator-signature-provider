@@ -15,5 +15,5 @@ identifier_name:
     - _rawResponse
 type_name:
   excluded:
-    - EosioReferenceAuthenticatorSignatureProvider
-    - EosioReferenceAuthenticatorSignatureProviderTests
+    - ArisenReferenceAuthenticatorSignatureProvider
+    - ArisenReferenceAuthenticatorSignatureProviderTests
